@@ -1,0 +1,101 @@
+@charset "utf-8";
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    color: inherit;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.all{
+    width: 1200px;
+    height: 700px;
+}
+.header{
+    width: 1200px;
+    height: 100px;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+    float: left;
+    background: skyblue;
+}
+.logo img{
+    float: left;
+    height: 50px;
+    width: 200px;
+    margin-top: 25px;
+}
+.menu{
+    width: 1000px;
+    height: 100px;
+    float: left;
+    background: blueviolet;
+}
+.navi>li{ 
+    float: left;
+    width: 200px;
+    background: white;
+}
+.navi>li>a{
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.navi>li:hover{
+    background: black;
+    color: white;
+}
+.slide{
+    width: 1200px;
+    height: 300px;
+    background: red;
+}
+.contents{
+    width: 1200px;
+    height: 200px;
+}
+.c1{
+    width: 400px;
+    height: 200px;
+    background: yellow;
+    float: left;
+}
+.c2{
+    width: 400px;
+    height: 200px;
+    background: violet;
+    float: left;
+}
+.c3{
+    width: 400px;
+    height: 200px;
+    background: green;
+    float: left;
+}
+.footer{
+    width: 1200px;
+    height: 100px;
+}
+.footer_logo{
+    width: 200px;
+    height: 100px;
+    background: yellowgreen;
+    float: left;
+}
+.copyright{
+    width: 750px;
+    height: 100px;
+    background: brown;
+    float: left;
+}
+.SNS{
+    width: 250px;
+    height: 100px;
+    background: magenta;
+    float: left;
+}
+
