@@ -1,0 +1,163 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+    color: #333333;
+}
+.body{
+    width: 1200px;
+    height: 800px;
+    border: 0px solid black;
+    margin: 0 auto;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+nav div{
+    height: 40px;
+    border: 1px solid black;
+    float: left;
+}
+nav .logo{
+    width: 200px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+nav .logo img{
+    width: 250px;
+    margin-top: -70px;
+}
+nav .menu{
+    width: 600px;
+    height: 40px;
+    float: left;
+    margin-left: 300px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+nav .menu div{
+    width: 150px;
+    height: 100%;
+    text-align: center;
+    line-height: 35px;
+}
+nav .menu div p{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
+nav .menu div ul {
+    border: 1px solid black;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+nav .menu div ul li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    background: #fff;
+}
+nav .menu div ul li:hover{
+    background: skyblue;
+}
+nav .menu div:hover ul{
+    height: 120px;
+}
+nav .menu div:hover p{
+    background: greenyellow;
+}
+
+/* 슬라이드 이동 */
+
+.imgBox{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1200px;
+    height: 300px;
+    border: 5px solid black;
+    overflow: hidden;
+}
+.imgBox .img3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4800px;
+    height: 100%;
+    border: 0px solid black;
+    animation: img3_ani 9s linear infinite;
+}
+@keyframes img3_ani{
+    0% {left: 0px;}
+    100% {left: -3600px;}
+}
+.imgBox .img3 li{
+    width: 1200px;
+    height: 100%;
+    outline: 1px solid blue;
+    float: left;
+}
+.imgBox .img3 li img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 공지사항/배너/바로가기 */
+
+.gong_banner_baro {
+    width: 100%;
+    height: 200px;
+    border: 0px solid blue;
+    display: flex;
+    justify-content: space-between;
+}
+.gong_banner_baro div{
+    width: 400px;
+    height: 100%;
+    border: 1px solid blue;
+}
+/* 공지/갤러리 */
+.gong_banner_baro  .go_ga{
+    width: 100%;
+    height: 100%;
+}
+.gong_banner_baro  .go_ga li{
+    width: 100%;
+
+}
+.gong_banner_baro  .go_ga li:first-child{
+    display: flex;
+}
+.gong_banner_baro  .go_ga li p{
+    width: 20%;
+    height: 30px;
+    border: 1px solid red;
+}
+.gong_banner_baro  .go_ga li:last-child{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.gong_banner_baro  .go_ga li:last-child div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 170px;
+}
